@@ -24,7 +24,8 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: > 
-            --define sonar.java.binaries=.
+            -Dsonar.java.binaries=.
+            -Dsonar.verbose=true
       # If you wish to fail your job when the Quality Gate is red, uncomment the
       # following lines. This would typically be used to fail a deployment.
       # We do not recommend to use this in a pull request. Prefer using pull request
