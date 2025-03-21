@@ -26,10 +26,8 @@ jobs:
         with:
           args: > 
             -Dsonar.java.binaries=.
-            -Dsonar.verbose=true
-            -Dsonar.pullrequest.base=main
-            -Dsonar.pullrequest.branch=someBranch
-            -Dsonar.pullrequest.key=10
+            -Dsonar.verbose=true 
+            -Dsonar.branch.name=
       # If you wish to fail your job when the Quality Gate is red, uncomment the
       # following lines. This would typically be used to fail a deployment.
       # We do not recommend to use this in a pull request. Prefer using pull request
